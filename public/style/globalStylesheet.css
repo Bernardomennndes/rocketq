@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --gradientPurple: linear-gradient(195.96deg, #FFFFFF -122.01%, #FFFFFF -121.99%, #9542FF 22.63%, #5F13FF 98.4%);
+    --overlay:rgba(255, 255, 255, 1) ;
+    --iconsAndDetails:rgba(165, 176, 193, 1) ;
+    --background:rgba(49, 49, 49, 1) ;
+    --lightGray:rgba(204, 204, 204, 1) ;
+    --white:rgba(255, 255, 255, 1) ;
+    --red:rgba(232, 63, 91, 1) ;
+    --mediumLightGrey:rgba(63, 63, 63, 1) ;
+    --purple:rgba(147, 96, 255, 1) ;
+
+    --lightGrey:rgba(220, 220, 220, 1) ;
+    --lightPurple:rgba(215, 207, 226, 1) ;
+    --mediumGray:rgba(211, 217, 226, 1) ;
+    --ultraLightGrey:rgba(229, 234, 241, 1) ;
+
+    --hoverPurple:rgba(117, 52, 255, 1) ;
+    --hoverRed:rgba(234, 75, 101, 1) ;
+    --hoverGrey:rgba(135, 148, 167, 1) ;
+
+    font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+    width: .7rem;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 31, 31);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+}
+
+body {
+    color: var(--lightGray);
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+body, input, button, textarea {
+    font-size: clamp(14px, 1.6rem, 2vh);
+    font-family: Fira Code;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+input, button, .button {
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+button, .button {
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--purple);
+    color: var(--white);
+
+    cursor: pointer;
+
+    transition: filter .2s;
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.1)
+}
+
+button > img,
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+button.outlined, .button.outlined {
+    background: var(--background);
+    color: var(--purple);
+    border: .2rem solid var(--purple)
+}
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
+
+}
+
+button.grey,
+.button.grey {
+    background: var(--lightGrey);
+    color: var(--mediumLightGrey)
+}
+
+
+
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+
+}
+
+.content header img {
+    width: 16.7rem;
+}
+
+input:hover, input:active, input:focus , input::-webkit-inner-spin-button, textarea:focus {
+    outline: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
